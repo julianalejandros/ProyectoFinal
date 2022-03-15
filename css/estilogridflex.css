@@ -1,0 +1,503 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    
+    html{
+        scroll-behavior:smooth;
+    }
+
+    .contenedorPadre{
+        background-color:white;
+        width: 95%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (3 1fr);
+        grid-template-areas: "header header"
+        "contenido contenido" 
+        "footer footer"; 
+        gap:0.5rem;  
+    }
+
+
+
+
+    .header{
+        background-color: white;
+        grid-area: header;
+        
+        
+    }
+
+    
+
+    .cabeceraAzul{
+        background-color: #0038B1;
+        height: 23vh;
+        position: relative;
+        -webkit-box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
+        -moz-box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
+        box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
+        
+        
+        
+        
+    }
+
+    .cabeceraAzul h3{
+        text-align:end;
+        padding-top: 0.3rem;
+        padding-right: 1.25rem;
+        color: black;
+        background-color: white;
+        font-family: 'Oswald', sans-serif;
+        
+    }
+
+    .logo{
+        padding: 0.5rem;
+        position:absolute; 
+        width: 100%;
+        
+       
+        
+        
+    }
+
+    .logo img{
+        width: 5rem;
+        justify-content: center;
+        
+    }
+    
+    .navSuperior{
+        background-color: white;
+        height: 4.1rem;  
+    }
+
+    .menusup{
+        text-align: end;
+        padding-top: 5rem;
+        padding-right: 1.25rem;
+    }
+
+    .menusup ul{
+        position: absolute;
+        display:none;
+        list-style: none;
+        padding:1.2rem;
+    } 
+
+    .menusup a{
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+    } 
+
+    .menusup a:hover{
+        color: #00b7ff;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+    } 
+
+    .menusup li{
+        color: #FFFFFF;
+        font-weight:bold;
+        position: relative;
+        display: inline-block;  
+        font-size: 1.5rem;  
+        margin: 0.6rem;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .menusup li:hover{
+        color: #00b7ff; 
+    }
+
+    .menusup li:hover ul{
+        display: flex;
+        flex-direction:column;
+        background-color:black;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .menusup ul li{
+        color: white;
+    }
+
+    .menusup ul li:hover{
+        color:#2892e9;
+    }
+    
+    .barraazul2{
+        background-color: #01152D;
+        padding-bottom: 1rem;
+        height: auto;
+        padding-bottom: 1.6rem;
+        width: 100%;
+        margin-top: 0.6rem;
+        display: flex;  
+    }
+
+    .barraazul2 h1{
+        color: #FFFFFF;  
+        width: 70%;
+        text-align: center;
+        padding-top: 2.7rem; 
+    }
+
+    .redessociales{
+        width: 30%;
+        text-align: center;
+        padding-top: 1.6rem;  
+    }
+
+    .redessociales img:hover{
+        zoom: 1.05;
+    }
+
+    
+    .contenido{
+        background-color: white;
+        margin: 0 auto;
+        width: 99.8%;
+        grid-area: contenido;
+    }
+
+    .perfil{
+        margin: 0.6rem;
+        border-radius: 1.9rem;
+        -webkit-box-shadow: 1px 16px 84px 0px rgba(57,95,105,0.68);
+        -moz-box-shadow: 1px 16px 84px 0px rgba(57,95,105,0.68);
+        box-shadow: 1px 16px 84px 0px rgba(57,95,105,0.68);
+        background-color: #01152D;
+        height: auto;  /* 28rem */
+        width: 0 auto;
+        padding-bottom: 5.3rem;
+        align-items: flex-start;
+       
+      
+    }
+
+    h1{
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .tituloPerfil{
+        font-family: 'Oswald', sans-serif;
+        color: #FFFFFF;
+        padding-left: 3.1rem;
+        padding-top: 1.9rem;
+    }
+
+    .parrafo{
+        color: #FFFFFF;
+        width: 50%;
+        height: auto;
+        padding-left: 5rem;
+        padding-top: 0.9rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;   
+    }
+
+    .parrafoFoto{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;  
+    }
+
+    .v-line{
+        border-left: 0.12rem solid white;
+        height: 19rem;
+        margin-left: 50%;
+        position: absolute; 
+    }
+
+    .fotoperfil{
+        border-radius: 0.6rem;
+        padding-left: 12%;
+        padding-top: 0.93rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column; 
+        flex-wrap:wrap   
+    }
+
+
+    .fotoperfil a{
+        color: #FFFFFF;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    .fotoperfil a:hover{
+        color: #e6d011;
+    }
+    
+    .Skills {
+        text-align: center;
+        margin-top: -2.5rem;
+    }
+
+    .linea{
+        background-color: #00b7ff;
+        height: 3.125rem;
+        margin-top: 6.25rem;
+    }
+
+    .fotos{
+        text-align:center;
+        background-color: rgb(41, 36, 58);
+        margin:0 auto;
+        padding: 1.25rem; 
+    }
+
+    .fotos img{
+        margin: 1.25rem;
+        opacity: 0.5;
+
+    }
+
+    .fotos img:hover{
+        opacity: 1;
+        -webkit-box-shadow: 1px -8px 69px -35px rgba(255,255,255,1);
+        -moz-box-shadow: 1px -8px 69px -35px rgba(255,255,255,1);
+        box-shadow: 1px -8px 69px -35px rgba(255,255,255,1);
+    }
+
+
+
+    .footer{
+        grid-area: footer;
+        background-image: url("../imagenes/footer.png");
+        background-size: cover;   
+    }
+
+    .footer image{
+        image-rendering: 100%;
+    }
+
+    
+.navinferior{
+    padding-top: 21.5rem;
+} 
+
+
+.menufooter{
+    padding-right: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+} 
+
+
+.menufooter li{
+    list-style: none;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0.7rem;
+    
+    font-family: 'Oswald', sans-serif;
+} 
+
+.menufooter a:hover li{
+    color: #fab700;
+    
+}
+
+.menusup .activo{
+    color:#ffe70a;
+}
+
+.menusup .activo a{
+    color:#ffe70a;
+}
+
+
+/* CSS HTML PERFIL PROFESIONAL */
+
+
+  
+.contenedorPerfil{
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex; 
+     
+}
+
+.perilImagenesCaja{
+   
+    margin-top:5%;
+    margin-left: 5%;
+    text-align: center;
+}
+  
+.perilImagenesCaja img{
+    margin-bottom: 2%;
+    padding-left: 10%;   
+}
+
+.perilProfesionalCaja{
+    background-color: #01152D;
+    height: 10%;
+    color: white;
+    padding: 2%;
+    margin-top: 2%;
+    margin-left: 10%;
+    border-radius: 2%;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.perilProfesionalCaja h2{
+    font-family: 'Oswald', sans-serif;
+    padding: 3%;
+}
+
+
+/* media query index */
+
+@media (max-width: 767px) {
+    body {
+    background-color: white;
+    width: 100%;
+    }
+
+    .contenedorPadre{
+        background-color:white;
+        width: 95%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (3 1fr);
+        grid-template-areas: "header header"
+        "contenido contenido" 
+        "footer footer"; 
+        gap:0.1rem;  
+    }
+
+    .header{
+        background-color: white;
+        grid-area: header;
+        
+    }
+
+   
+    .cabeceraAzul{
+        background-color: #0038B1;
+        justify-content: center;
+        
+    }
+
+    .cabeceraAzul h3{
+        text-align:end;
+        color: black;
+        background-color: white;
+        font-family: 'Oswald', sans-serif;
+        z-index: 3;
+    }
+
+    .logo{
+    padding: 1rem;
+    align-items: center;
+    
+    }
+    
+    .logo img{
+        width: 5rem;
+        
+    }
+
+    .barraazul2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .barraazul2 h1{
+        width: 100%;
+    }
+
+    
+
+    .menusup{
+        text-align: center;
+        padding-top: 4rem;
+        padding-right: 1.25rem;
+    }
+    .redessociales{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .menusup li{
+        color: #FFFFFF;
+        font-weight:bold;
+        position: relative;
+        font-size: 1rem;  
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .parrafo{
+
+        color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        padding-top: 0.9rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify; 
+        
+    }
+
+    .parrafo p {
+        font-size: 1rem;
+    }
+
+    .v-line{
+        display: none;
+    }
+
+    .parrafoFoto{
+        justify-content: center;
+    }
+
+    .fotoperfil{
+        border-radius: 0.6rem;
+        padding-left: -50rem;
+        padding-top: 2rem;
+        text-align: center;
+         
+    }
+
+    .navinferior{
+        padding-top: 16rem;
+    } 
+
+    .contenedorPerfil{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    }
+
+
+
+
+
