@@ -157,7 +157,7 @@
     }
 
     .redessociales img:hover{
-        zoom: 1.05;
+        transform: scale(0.5);
     }
 
     
@@ -247,6 +247,10 @@
         margin-top: -2.5rem;
     }
 
+    .Skills img:hover{
+        transform: scale(1.1);
+    }
+
     .linea{
         background-color: #00b7ff;
         height: 3.125rem;
@@ -258,6 +262,16 @@
         background-color: rgb(41, 36, 58);
         margin:0 auto;
         padding: 1.25rem; 
+
+        -webkit-transition: 1s linear;
+        transition: 1s linear;
+       
+    }
+
+    .fotos:hover{
+        background-color: rgb(92, 71, 161);
+        -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+        box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     }
 
     .fotos img{
