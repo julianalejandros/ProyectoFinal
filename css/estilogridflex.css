@@ -21,14 +21,9 @@
         gap:0.5rem;  
     }
 
-
-
-
     .header{
         background-color: white;
         grid-area: header;
-        
-        
     }
 
     
@@ -40,10 +35,6 @@
         -webkit-box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
         -moz-box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
         box-shadow: 1px 14px 16px -10px rgba(57,95,105,0.68);
-        
-        
-        
-        
     }
 
     .cabeceraAzul h3{
@@ -52,24 +43,18 @@
         padding-right: 1.25rem;
         color: black;
         background-color: white;
-        font-family: 'Oswald', sans-serif;
-        
+        font-family: 'Oswald', sans-serif;  
     }
 
     .logo{
         padding: 0.5rem;
         position:absolute; 
-        width: 100%;
-        
-       
-        
-        
+        width: 100%;   
     }
 
     .logo img{
         width: 5rem;
-        justify-content: center;
-        
+        justify-content: center;  
     }
     
     .navSuperior{
@@ -179,8 +164,6 @@
         width: 0 auto;
         padding-bottom: 5.3rem;
         align-items: flex-start;
-       
-      
     }
 
     h1{
@@ -235,7 +218,10 @@
         display: block;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        
+    }
+
+    .modal1{
+        color: black;
     }
 
     .fotoperfil a:hover{
@@ -247,7 +233,7 @@
         margin-top: -2.5rem;
     }
 
-    .Skills img:hover{
+    .Skills  img:hover{
         transform: scale(1.1);
     }
 
@@ -265,7 +251,6 @@
 
         -webkit-transition: 1s linear;
         transition: 1s linear;
-       
     }
 
     .fotos:hover{
@@ -277,7 +262,6 @@
     .fotos img{
         margin: 1.25rem;
         opacity: 0.5;
-
     }
 
     .fotos img:hover{
@@ -287,19 +271,17 @@
         box-shadow: 1px -8px 69px -35px rgba(255,255,255,1);
     }
 
-
-
     .footer{
         grid-area: footer;
         background-image: url("../imagenes/footer.png");
-        background-size: cover;   
+        background-size: cover; 
     }
 
-    .footer image{
+     .footer image .img-fluid{
         image-rendering: 100%;
-    }
+    } 
 
-    
+
 .navinferior{
     padding-top: 21.5rem;
 } 
@@ -335,6 +317,11 @@
     color:#ffe70a;
 }
 
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* CSS HTML PERFIL PROFESIONAL */
 
@@ -362,7 +349,7 @@
 
 .perilProfesionalCaja{
     background-color: #01152D;
-    height: 10%;
+    height: auto;
     color: white;
     padding: 2%;
     margin-top: 2%;
@@ -370,11 +357,23 @@
     border-radius: 2%;
     text-align: justify;
     font-family: 'Roboto', sans-serif;  
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.perilProfesionalCaja:hover{
+    background-color: rgb(116, 68, 29);
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 
 .perilProfesionalCaja h2{
     font-family: 'Oswald', sans-serif;
     padding: 3%;
+}
+
+.perilImagenesCaja  img:hover{
+    transform: scale(1.1);
 }
 
 
