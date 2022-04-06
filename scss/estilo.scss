@@ -1,0 +1,29 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+@import "mediaQueries";
+
+
+*{margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedorPadre{
+  background-color: $bg_Color;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat (3 1fr);
+  grid-template-areas: "header header"
+  "contenido contenido" 
+  "footer footer"; 
+  gap:0.5rem;  
+}
+
+html{
+  scroll-behavior:smooth;
+}
+

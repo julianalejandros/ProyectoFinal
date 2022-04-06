@@ -1,0 +1,132 @@
+@media (max-width: 767px) {
+    body {
+    background-color: white;
+    width: 100%;
+    }
+
+    .contenedorPadre{
+        background-color:white;
+        width: 95%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat (3 1fr);
+        grid-template-areas: "header header"
+        "contenido contenido" 
+        "footer footer"; 
+        gap:0.1rem;  
+    }
+
+    .header{
+        background-color: white;
+        grid-area: header;
+        
+    }
+
+   
+    .cabeceraAzul{
+        background-color: #0038B1;
+        justify-content: center;
+        
+    }
+
+    .cabeceraAzul h3{
+        text-align:end;
+        color: black;
+        background-color: white;
+        font-family: 'Oswald', sans-serif;
+        z-index: 3;
+    }
+
+    .logo{
+    padding: 1rem;
+    align-items: center;
+    
+    }
+    
+    .logo img{
+        width: 5rem;
+        
+    }
+
+    .barraazul2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .barraazul2 h1{
+        width: 100%;
+    }
+
+    
+
+    .menusup{
+        text-align: center;
+        padding-top: 4rem;
+        padding-right: 1.25rem;
+    }
+    .redessociales{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .menusup li{
+        color: #FFFFFF;
+        font-weight:bold;
+        position: relative;
+        font-size: 1rem;  
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .parrafo{
+
+        color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        padding-top: 0.9rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: justify; 
+        
+    }
+
+    .parrafo p {
+        font-size: 1rem;
+    }
+
+    .v-line{
+        display: none;
+    }
+
+    .parrafoFoto{
+        justify-content: center;
+    }
+
+    .fotoperfil{
+        border-radius: 0.6rem;
+        padding-left: -50rem;
+        padding-top: 2rem;
+        text-align: center;
+         
+    }
+
+    .navinferior{
+        padding-top: 16rem;
+    } 
+
+    .contenedorPerfil{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+
+    }
+
+
