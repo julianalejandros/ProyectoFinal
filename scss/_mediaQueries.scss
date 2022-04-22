@@ -1,19 +1,18 @@
 @media (max-width: 767px) {
     body {
     background-color: white;
-    width: 100%;
     }
 
     .contenedorPadre{
-        background-color:white;
+        background-color:rgb(255, 255, 255);
         width: 95%;
         margin: 20px auto;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat (3 1fr);
-        grid-template-areas: "header header"
-        "contenido contenido" 
-        "footer footer"; 
+        grid-template-areas: "header"
+        "contenido" 
+        "footer"; 
         gap:0.1rem;  
     }
 
@@ -25,28 +24,39 @@
 
    
     .cabeceraAzul{
-        background-color: #0038B1;
+        height: 20%;
+        background-color: #8b1976;
         justify-content: center;
         
     }
 
     .cabeceraAzul h3{
         text-align:end;
-        color: black;
+        color: rgb(0, 0, 0);
         background-color: white;
         font-family: 'Oswald', sans-serif;
         z-index: 3;
     }
 
     .logo{
-    padding: 1rem;
-    align-items: center;
-    
+    display: none;
     }
     
-    .logo img{
-        width: 5rem;
+
+    .logo1{
+        display: block;
+        text-align: center;
+        margin-bottom: 45px;
         
+        
+    }
+
+    .logo1 img{
+        width: 20%;
+    }
+
+    .d-flex{
+        margin-top: 30px;
     }
 
     .barraazul2{
@@ -66,13 +76,17 @@
         text-align: center;
         padding-top: 4rem;
         padding-right: 1.25rem;
+        position: relative;
     }
     .redessociales{
         display: flex;
         width: 100%;
         justify-content: center;
-
     }
+
+   .container-fluid{
+       z-index: 50;
+   }
 
     .menusup li{
         color: #FFFFFF;
@@ -107,16 +121,28 @@
         justify-content: center;
     }
 
+
+    .otrasHabilidades{ 
+        .titulos{
+            font-size: 20px;
+        }
+    }
+
     .fotoperfil{
-        border-radius: 0.6rem;
-        padding-left: -50rem;
-        padding-top: 2rem;
-        text-align: center;
-         
+        padding-top: 0.93rem;
+        padding-left: 0%;
+       
+       
+    }
+
+    .fotoperfil img{
+        border-radius: 15px;
+       
     }
 
     .navinferior{
         padding-top: 16rem;
+        text-align: center;
     } 
 
     .contenedorPerfil{
@@ -125,8 +151,24 @@
         flex-direction: column;
     }
 
-    
 
+
+    .audio{
+       margin: 120px 0 200px 0;
+    
     }
+
+  .podcast{
+    margin-top: 250px;
+    }
+
+    .enVivo{
+        margin: 0 0 80px 0;
+        
+    }
+}
+   
+
+    
 
 

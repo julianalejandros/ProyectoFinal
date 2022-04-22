@@ -19,7 +19,6 @@
     .cabeceraAzul h3{
         text-align:end;
         padding-top: 0.3rem;
-        padding-right: 1.25rem;
         color: black;
         background-color: white;
         font-family: 'Oswald', sans-serif;  
@@ -35,6 +34,12 @@
         width: 5rem;
         justify-content: center;  
     }
+
+    .logo1{
+        display: none;
+    }
+
+   
     
     .navSuperior{
         background-color: white;

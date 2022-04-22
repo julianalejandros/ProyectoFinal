@@ -1,60 +1,42 @@
-.footer{
+.footer {
     grid-area: footer;
     background-image: url("../imagenes/footer.png");
-    background-size: cover; 
+    background-size: cover;
 
-
-    .footer image .img-fluid{
-        image-rendering: 100%;
-    } 
-
-    .navinferior{
+    .navinferior {
         padding-top: 21.5rem;
-        } 
+    }
 
-        .menufooter{
-            padding-right: 1.25rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: end;
-            } 
+    .menufooter {
+        padding-right: 1.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-            .menufooter li{
-                list-style: none;
-                color: #ffffff;
-                text-decoration: none;
-                margin: 0.7rem;
-                
-                font-family: 'Oswald', sans-serif;
-                } 
+    .menufooter li {
+        list-style: none;
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0.7rem;
+        font-family: 'Oswald', sans-serif;
+    }
 
-                .menufooter a:hover li{
-                    color: #fab700;
-                    
-                    }
-                    
-                    .menusup .activo{
-                    color:#ffe70a;
-                    }
-                    
-                    .menusup .activo a{
-                    color:#ffe70a;
-                    }
-                    
-                    .img-fluid{
-                    max-width: 100%;
-                    height: auto;
-                    }
+    .menufooter a:hover li {
+        color: #fab700;
+
+    }
+
+    .menusup .activo {
+        color: #ffe70a;
+    }
+
+    .menusup .activo a {
+        color: #ffe70a;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
